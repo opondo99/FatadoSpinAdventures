@@ -1,0 +1,870 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .nav {
+        width: 100vw;
+        height: 8vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+
+        .logo {
+            min-width: 30vw;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            h1 {
+                padding: 0 2vmin;
+                margin: 0;
+                font-size: 24px;
+                color: #fff;
+                font-weight: 300;
+                text-transform: uppercase;
+                font-size: 2.6vmin;
+                letter-spacing: .9vmin;
+            }
+        }
+
+        .spacer {
+            flex: 1;
+        }
+
+        .close {
+            display: none;
+        }
+
+        .navigation {
+            min-height: 100%;
+            display: flex;
+            // flex-direction: row;
+            align-items: center;
+            min-width: 40vw;
+            ul {
+                min-width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                min-height: 8vh;
+
+                li {
+                    min-height: 8vh;
+                    padding: 2vmin 1vmin 0 1vmin;
+                    min-width: 5vw;
+                    a {
+                        height: 8vh;
+                        text-decoration: none;
+                        color: #fff;
+                        text-transform: uppercase;
+                        // min-width: 10vw;
+                    }
+                }
+
+                li:hover{
+                    background: rgb(146, 41, 3);
+
+                }
+            }
+        }
+    }
+
+    .drop-down {
+        display: none;
+    }
+
+    .header {
+        position: relative;
+        width: 100%;
+        height: 92vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .bg-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 92vh;
+            // background: url(./assets/assorted-alcoholic-drinks-2796105.jpg);
+            background-position: center;
+            background-size: cover;
+            z-index: -1;
+            transition: all .5s ease;
+            animation: hero 25s infinite;
+        }
+
+        .filter {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 92vh;
+            background: #000;
+            opacity: .5;
+            z-index: 0;
+        }
+
+        .intro-txt {
+            position: absolute;
+            top: 22vh;
+            left: 0;
+            width: 100vw;
+            height: 25vh;
+            // margin: auto;
+            color: #fff;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            h1 {
+                font-size: 6vmin;
+            }
+
+            .action {
+                border: none;
+                min-width: 15vmin;
+                margin-top: .5rem;
+                background: rgb(146, 41, 3);
+                padding: .5rem;
+                font-size: 2vmin;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all .2s ease;
+                box-shadow: 1px 1px rgb(51, 45, 45);
+            }
+
+            .action:hover {
+                background: rgb(195, 59, 9);
+                min-width: 18vmin;
+                padding: .6rem;
+                font-size: 2.5vmin;
+            }
+        }
+
+        .contact-form {
+            position: absolute;
+            min-height: 70vh;
+            z-index: 2;
+            // opacity: 0;
+            border-radius: 10px;
+            min-width: 50vw;
+            background: #fff;
+            top: -1480px;
+
+
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 50vh;
+                position: relative;
+                // opacity: .5;
+
+                h2 {
+                    min-width: 70vw;
+                    font-size: 4vmin;
+                    text-align: center;
+                    text-transform: uppercase;
+                    padding: 2vmin 0;
+                }
+
+
+                img {
+                    width: 25px;
+                    height: 25px;
+                    padding: 7px;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    cursor: pointer;
+                }
+
+                .input-field{
+                    width: 30vw;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+
+                button {
+                    display: grid;
+                    align-self: center;
+                    width: 10vmin;
+                    height: 4vmin;
+                    background: rgb(146, 41, 3);
+                    color: #fff;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+    }
+
+    .events {
+        width: 100vw;
+        min-height: 92vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .events-list {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                // flex-wrap: wrap;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                width: 100vw;
+                min-height: 50vh;
+
+                li {
+                    min-width: 30vw;
+                    min-height: 50vh;
+                    background: rgb(65, 63, 63);
+                    color: white;
+                    overflow: hidden;
+                    text-align: center;
+                    position: relative;
+                    // padding: 2rem;
+                    margin: 1rem;
+                    transition: all .3s ease;
+                    // pointer-events: none;
+
+                    p {
+                        position: absolute;
+                        min-width: 30vw;
+                        min-height: 10vh;
+                        top: 25vh;
+                        font-size: 2.5vmin;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                        text-align: center;
+                        z-index: 1;
+                    }
+
+                    .filter {
+                        position: absolute;
+                        min-width: 30vw;
+                        min-height: 50vh;
+                        background: #000;
+                        opacity: .5;
+                        z-index: 0;
+                    }
+
+                    
+                }
+
+                li:hover {
+                    transform: scale(1.1);
+                    opacity: 2;
+                }
+
+                li:nth-child(1) {
+                    background: url(./assets/woman-smiling-shaking-hands-3184286.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                li:nth-child(2) {
+                    background: url(./assets/women-taking-selfies-3611313.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                li:nth-child(3) {
+                    background: url(./assets/photo-of-baby-girl-in-tutu-dress-standing-beside-large-gold-2261282.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                li:nth-child(4) {
+                    background: url(./assets/wedding-preparation-313707.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                li:nth-child(5) {
+                    background: url(./assets/green-and-white-volkswagen-combi-594384.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                li:nth-child(6) {
+                    background: url(./assets/people-at-concert-1105666.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                li:nth-child(7) {
+                    background: url(./assets/smiling-man-standing-and-dancing-near-smiling-woman-2240771.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                li:nth-child(8) {
+                    background: url(./assets/man-wearing-black-crew-neck-shirt-playing-dj-turntable-2123606.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                // li:nth-child() {
+                    
+                // }
+
+                // li:nth-child() {
+                    
+                // }
+
+            }
+
+            ul::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+
+    
+    .services {
+        min-height: 90vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        .services-list {
+            width: 100vw;
+            height: 70vh;
+
+            ul {
+                width: 90vw;
+                height: 70vh;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+                grid-gap: 1rem;
+
+                .card {
+                    width: 15rem;
+                    height: 40vh;
+                    background: rgb(65, 63, 63);
+                    color: white;
+                    text-align: center;
+                    position: relative;
+                    overflow: hidden;
+                    // cursor: pointer;
+
+                    .activator {
+                        width: 16rem;
+                        min-height: 8vh;
+                        cursor: pointer;
+                        text-transform: uppercase;
+                        position: absolute;
+                        z-index: 1;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        background: #fff;
+                        color: black;
+
+                        h1 {
+                            font-size: 2vmin;
+                            padding: 0 1vmin;
+                            margin: 0;
+                            pointer-events: none;
+                        }
+
+
+                        img {
+                            width: 2vmin;
+                            height: 2vmin;
+                            pointer-events: none;
+                        }
+                    }
+
+
+
+                    .card-reveal {
+                        position: relative;
+                        height: 40vh;
+                        width: 15rem;
+                        padding: 2vmin 2vmin;
+                        overflow-x: hidden;
+
+                        .card-title {
+                            position: absolute;
+                            width: 16rem;
+                            min-height: 8vh;
+                            display: flex;
+                            flex-direction: row-reverse;
+                            align-items: center;
+                            justify-content: center;
+                            // top: 1vmin;
+                            left: 0;
+                            
+                            p {
+                                pointer-events: none;
+                                font-size: 2vmin;
+                                width: 16rem;
+                                text-transform: uppercase;
+                                color: #000;
+                            }
+
+                            img {
+                                height: 2vmin;
+                                width: 2vmin;
+                                pointer-events: none;
+                            }
+
+                        }
+
+                        .description {
+                            color: #000;
+                            z-index: 1;
+                            margin-top: 8vh;
+                            // top: 20vh;
+                        }
+
+                    }
+                    
+                    .card-reveal::-webkit-scrollbar {
+                        display: none;
+                    }
+
+                    .filter {
+                        position: absolute;
+                        width: 15rem;
+                        height: 70vh;
+                        background: #000;
+                        opacity: .5;
+                        top: 0;
+                        z-index: 0;
+                        pointer-events: none;
+                    }
+
+                }
+
+                li:nth-child(1) {
+                    background: url(./assets/man-wearing-black-crew-neck-shirt-playing-dj-turntable-2123606.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+
+                li:nth-child(2) {
+                    background: url(./assets/iphone-travel-euro-ticket-69866.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                li:nth-child(3) {
+                    background: url(./assets/accommodation-apartment-bed-bedding-279805.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                li:nth-child(4) {
+                    background: url(./assets/action-asphalt-auto-automobile-1210622.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                li:nth-child(5) {
+                    background: url(./assets/white-tent-3059408.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                li:nth-child(6) {
+                    background: url(./assets/close-up-photo-of-assorted-color-of-push-pins-on-map-1078850.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                li:nth-child(7) {
+                    background: url(./assets/macro-shot-audio-equalizer-744318.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                li:nth-child(8) {
+                    background: url(./assets/unknown-person-playing-guitar-2510428.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+        }
+    }
+
+    .sponsors {
+        margin-top: 20vmin;
+        width: 100vw;
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+            margin: 15vmin auto;
+            // color:orangered;
+        }
+
+        img {
+            width:40vmin;
+        }
+    }
+
+    .footer {
+        min-height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width: 760px) {
+    body {
+        width: 100vw;
+        min-height: 100vh;
+
+        .nav {
+            display: flex;
+            flex-direction: row;
+            z-index: 3;
+            position: fixed;
+
+            .spacer {
+                flex: 1;
+            }
+
+            .humburger {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                width: 25px;
+                height: 20px;
+                padding: 0 5vmin;
+
+                .line1 {
+                    height: 2px;
+                    width: 20px;
+                    background: #fff;
+                }
+
+                .line2 {
+                    height: 2px;
+                    width: 20px;
+                    background: #fff;
+                }
+
+                .line3 {
+                    height: 2px;
+                    width: 20px;
+                    background: #fff;
+                }
+            }
+
+            .close {
+                display: none;
+                min-width: 30px;
+
+                svg {
+                width: 30px;
+                padding: 0 2vmin;
+                }
+            }
+
+            .navigation {
+                display: none;
+            }
+        }
+
+
+        .drop-down {
+            display: block;
+            top: -100vh;
+            position: fixed;
+            min-height: 95vh;
+            min-width: 100vw;
+            background: #fff;
+            z-index: 2;
+
+
+            .drop-nav {
+                min-height: 85vh;
+                min-width: 100vw;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    min-width: 100vw;
+                    min-height: 80vh;
+
+                    li {
+                        list-style: none;
+                        
+
+                        a {
+                            text-decoration: none;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        .header {
+
+        
+            .contact-form {
+                position: absolute;
+                min-height: 70vh;
+                z-index: 2;
+                // opacity: 0;
+                border-radius: 10px;
+                min-width: 90vw;
+                background: #fff;
+                top: -1480px;
+
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 50vh;
+                    position: relative;
+                    // opacity: .5;
+
+
+                    img {
+                        width: 25px;
+                        height: 25px;
+                        padding: 7px;
+                        position: absolute;
+                        top: 20px;
+                        right: 20px;
+                        cursor: pointer;
+                    }
+
+                    .input-field{
+                        width: 70vw;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+
+                    button {
+                        display: grid;
+                        align-self: center;
+                        width: 15vmin;
+                        height: 10vmin;
+                        background: rgb(146, 41, 3);
+                        color: #fff;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+
+        .events {
+            min-height: 100vh;
+            .events-list {
+                min-height: 100vh;
+                ul {
+                    li {
+                        min-width: 80vw;
+
+                        p {
+                            min-width: 80vw;
+                        }
+                        .filter {
+                            min-width: 90vw;
+                        }
+                    }
+                }
+            }
+        }
+
+        .services {
+            min-height: 300vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            h1 {
+                min-height: 8vh;
+                margin-top: 0;
+                padding-top: 0;
+                margin-bottom: 100px;
+                padding-bottom: 100px;
+            }
+
+            .services-list {
+                min-height: 300vh;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 290vh;
+
+                    .card {
+                        min-height: 40vh;
+                        width: 80vw;
+
+                        .activator {
+                            width: 80vw;
+                            min-height: 8vh;
+                            cursor: pointer;
+                            text-transform: uppercase;
+                            
+                            position: absolute;
+                            z-index: 1;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                            background: #fff;
+                            color: black;
+
+                            h1 {
+                                font-size: 2vmin;
+                                padding: 0 1vmin;
+                                margin: 0;
+                                padding-top: 6vmin;
+                                pointer-events: none;
+                            }
+
+
+                            img {
+                                width: 2vmin;
+                                height: 2vmin;
+                                pointer-events: none;
+                            }
+                        }
+
+                        .filter {
+                            position: absolute;
+                            width: 80vw;
+                            height: 70vh;
+                            background: #000;
+                            opacity: .5;
+                            top: 0;
+                            z-index: 0;
+                            pointer-events: none;
+                        }
+
+                        .card-reveal {
+                            min-width: 80vw;
+
+                            .card-title {
+                                min-width: 80vw;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .sponsors {
+            margin-top: 30vmin;
+            min-height: 40vh;
+        }
+
+        .footer {
+            min-height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .contact {
+                display: grid;
+                place-items: center;
+
+                ul {
+                    display: grid;
+                    place-items: center;
+                }
+            }
+
+            .site-map {
+                display: grid;
+                place-items: center;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@keyframes hero {
+    0% {
+        background: url(./assets/vehicle-on-road-near-mountain-1842439.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    25% {
+        background: url(./assets/group-of-person-watching-concert-outdoors-1540343.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    50% {
+        background: url(./assets/people-sitting-on-gang-chairs-2774556.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    75% {
+        background: url(./assets/wedding-preparation-313707.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    100% {
+        background: url(./assets/vehicle-on-road-near-mountain-1842439.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+
+// li::-webkit-scrollbar { display: none !important; }
+body::-webkit-scrollbar { display: none !important; }

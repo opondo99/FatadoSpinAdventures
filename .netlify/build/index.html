@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Event Organiser</title>
+        <meta name="description" content="This is an events organiser landing site that displays the organisers services and past work coupled with client testimonials.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./main.css">
+                <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!-- Font Awesome -->
+        
+        <script src="https://use.fontawesome.com/e8add5ca3b.js"></script>
+        
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+        <script type="text/javascript">
+           (function(){
+              emailjs.init("user_nMUYOo5YDCfm42uDnS4v4");
+           })();
+        </script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/TextPlugin.min.js" integrity="sha256-Ejarrovr4RBRcG2RU6VSgostt/u+Og06Cm6CCrHPJMA=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js" integrity="sha256-VV47uJSoHZUeiBcCs3FcBOQLMn++yeG/zqZvaUkvGZM=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="nav">
+          <div class="logo">
+            <h1>Fatado_$pin_Events</h1>
+          </div>
+
+          <div class="spacer"></div>
+
+
+          <div class="humburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+
+          <div class="close">
+            <!-- <img src="./assets/close.svg" alt="close nav"> -->
+            <svg id="Capa_1" enable-background="new 0 0 386.667 386.667" height="512" viewBox="0 0 386.667 386.667" width="512" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"/></svg>
+          </div>
+
+          <div class="navigation">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <!-- <li></li> -->
+            </ul>
+          </div>
+        </section>
+
+
+        <div class="drop-down">
+          <div class="drop-nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <!-- <li></li> -->
+            </ul>
+          </div>
+        </div>
+
+        <section class="header">
+          <div class="bg-img"></div>
+          <div class="filter"></div>
+          <div class="intro-txt">
+            <h1>Lets talk about your event</h1>
+            <button class="action">Contact Us</button>
+          </div>
+          <div class="contact-form row">
+            <form class="col s12" id="myform" method="post">
+              <img src="./assets/close.svg" alt="close tab" class="close-form">
+              <h2>Send us an email</h2>
+              <div class="input-field col s8">
+                <input type="text" name="email" id="email"/>
+                <label for="email">email</label>
+              </div>
+
+              <div class="input-field col s8">
+                <input type="text" name="message_html" id="message"/>
+                <label for="message">message</label>
+              </div>
+
+              <br><br>
+
+              <button class="send-btn">send</button>
+              </form>
+          </div>
+        </section>
+
+        <section class="events">
+          <h1>Our Events</h1>
+          <div class="events-list">
+            <ul>
+              <li>
+                <p>Corporate</p>
+                <div class="filter"></div>
+              </li>
+              <li>
+                <p>Family</p>
+                <div class="filter"></div>
+              </li>
+              <li>
+                <p>Birthday Parties</p>
+                <div class="filter"></div>
+              </li>
+              <li>
+                <p>Weddings</p>
+                <div class="filter"></div>
+              </li>
+              <li>
+                <p>Road Trips</p>
+                <div class="filter"></div>
+              </li>
+              <li>
+                <p>Concerts</p>
+                <div class="filter"></div>
+              </li>
+              <li>
+                <p>Themed Parties</p>
+                <div class="filter"></div>
+              </li>
+              <li>
+                <p>Entertainment</p>
+                <div class="filter"></div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="services" id="services">
+          <h1>Our Services</h1>
+          <div class="services-list">
+            <ul>
+              <li class="card">
+                <div class="activator">
+                  <h1>DJ Bookings</h1>
+                  <img src="./assets/sort-down.svg"/>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title">
+                    <img src="./assets/close.svg"/>
+                  </span>
+                  <p class="description">
+                    Need a dj for your event? Dont worry, we have you covered.
+                    We will book a dj or the number of dj's you need for your event 
+                    and we make sure to offer the best and your party is sure to be alive.
+                  </p>
+                </div>
+                <div class="filter"></div>
+              </li>
+
+              <li class="card">
+                <div class="activator">
+                  <h1>Ticket Bookings</h1>
+                  <img src="./assets/sort-down.svg"/>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title">
+                    <img src="./assets/close.svg"/>
+                  </span>
+                  <p class="description">
+                    Need a ticket to an event, a touring facility, travel ticket or any other kind of ticket 
+                    needed for your business? We can handle that for you. Your job is just to show up 
+                    and do your thing.
+                  </p>
+                </div>
+                <div class="filter"></div>
+
+              </li>
+
+              <li class="card">
+                <div class="activator">
+                  <h1>Accomodation</h1>
+                  <img src="./assets/sort-down.svg"/>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title">
+                    <img src="./assets/close.svg"/>
+                  </span>
+                  <p class="description">
+                    Travelling for business or vacation or just need a place to stay? No need to hustle 
+                    around sites looking for the best deal, we can handle that for you as we are sure you 
+                    would prefer to use your time on your main task.
+                  </p>
+                </div>
+                <div class="filter"></div>
+              </li>
+
+              <li class="card">
+                <div class="activator">
+                  <h1>Transportation</h1>
+                  <img src="./assets/sort-down.svg"/>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title">
+                    <img src="./assets/close.svg"/>
+                  </span>
+                  <p class="description">
+                    Do you need transportation? We have you covered, be it a road trip or business trip, we 
+                    shall handle evrything, from the car hire to the driver hire to the fueling.
+                  </p>
+                </div>
+                <div class="filter"></div>
+              </li>
+
+              <li class="card">
+                <div class="activator">
+                  <h1>Tent Hire</h1>
+                  <img src="./assets/sort-down.svg"/>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title">
+                    <img src="./assets/close.svg"/>
+                  </span>
+                  <p class="description">
+                    Need a tent for a wedding or graduation or promotion party? With our services you will be able to aquire 
+                    a tent of whatever size and number needed and we will also handle the setup and deconstruction and transportation 
+                    of the tent. You dont have to move a muscle.
+                  </p>
+                </div>
+                <div class="filter"></div>
+              </li>
+
+              <li class="card">
+                <div class="activator">
+                  <h1>Location Booking</h1>
+                  <img src="./assets/sort-down.svg"/>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title">
+                    <img src="./assets/close.svg"/>
+                  </span>
+                  <p class="description">
+                    Need a location to host an event? We have you covered. This includes hotels, conference rooms, gathering hall, events grounds 
+                    , stadiums and many more other locations.
+                  </p>
+                </div>
+                <div class="filter"></div>
+              </li>
+
+              <li class="card">
+                <div class="activator">
+                  <h1>Sound Equipment and Lighting</h1>
+                  <img src="./assets/sort-down.svg"/>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title">
+                    <img src="./assets/close.svg"/>
+                  </span>
+                  <p class="description">
+                    If you need sound equipment or lighting for your event, which you might most likely
+                    need. We've got you covered. We make sure to offer the best quality sound system and proper 
+                    lighting for your event.
+                  </p>
+                </div>
+                <div class="filter"></div>
+              </li>
+
+              <li class="card">
+                <div class="activator">
+                  <h1>Photography & Videography</h1>
+                  <img src="./assets/sort-down.svg"/>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title">
+                    <img src="./assets/close.svg"/>
+                  </span>
+                  <p class="description">
+                    Want to capture that specal moment on video or photos? We've got you covered. We handle everything from photoshoot and videoshoot 
+                    and video editing and you receive the final result without a hustle.
+                  </p>
+                </div>
+                <div class="filter"></div>
+              </li>
+
+            </ul>
+          </div>
+        </section>
+
+        <section class="sponsors">
+          <h1>sponsors</h1>
+          <a href="https://web.facebook.com/Fatado_pin_%C3%82dv%C3%ABnt%C3%BAr%C3%AAs-639725109871894/?eid=ARArloAz4LA6K5oiFRWdW7Dnq6_OuAdhKMHkPR8OqAihM1jjM7SlEexYmCn5E0amad71B8t2P7GLxKJO&timeline_context_item_type=intro_card_work&timeline_context_item_source=100003214712574&fref=tag" target="_blank"><img src="./assets/fatado-logo.svg"/></a>
+        </section>
+
+        <section class="footer">
+          <div class="contact">
+            <h1>Contact Us</h1>
+            <ul>
+              <li>Phone : +254 704077289</li>
+              <li>Email : fatadoadventurespins@gmail.com</li>
+            </ul>
+            <ul class="socials">
+              <li><a href="https://www.instagram.com/fatado_spin/?hl=en" target="_blank">Instagram</a></li>
+              <li><a href="https://web.facebook.com/Fatado_pin_%C3%82dv%C3%ABnt%C3%BAr%C3%AAs-639725109871894/?eid=ARArloAz4LA6K5oiFRWdW7Dnq6_OuAdhKMHkPR8OqAihM1jjM7SlEexYmCn5E0amad71B8t2P7GLxKJO&timeline_context_item_type=intro_card_work&timeline_context_item_source=100003214712574&fref=tag" target="_blank">FaceBook</a></li>
+              <!-- <li>Twitter</li> -->
+            </ul>
+          </div>
+          <!-- <div class="socials"></div> -->
+          <div class="site-map">
+            <h1>Site Map</h1>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="#services">Services</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineLite.min.js" integrity="sha256-nuhNsfXzBFR6G1lKP8bK77dakkQDqdHcQ4OCFZvk6Qo=" crossorigin="anonymous"></script>
+        <script src="./animate.js" async defer></script>
+
+        <script src="./index.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,1000 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+body h1 {
+  font-size: 24px;
+}
+
+body .nav {
+  width: 100vw;
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #000;
+}
+
+body .nav .logo {
+  min-width: 30vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .nav .logo h1 {
+  padding: 0 2vmin;
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2.6vmin;
+  letter-spacing: .9vmin;
+}
+
+body .nav .spacer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .nav .close {
+  display: none;
+}
+
+body .nav .navigation {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 40vw;
+}
+
+body .nav .navigation ul {
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-height: 8vh;
+}
+
+body .nav .navigation ul li {
+  min-height: 8vh;
+  padding: 2vmin 1vmin 0 1vmin;
+  min-width: 5vw;
+}
+
+body .nav .navigation ul li a {
+  height: 8vh;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+body .nav .navigation ul li:hover {
+  background: #922903;
+}
+
+body .drop-down {
+  display: none;
+}
+
+body .header {
+  position: relative;
+  width: 100%;
+  height: 92vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .header .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 92vh;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-animation: hero 25s infinite;
+          animation: hero 25s infinite;
+}
+
+body .header .filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 92vh;
+  background: #000;
+  opacity: .5;
+  z-index: 0;
+}
+
+body .header .intro-txt {
+  position: absolute;
+  top: 22vh;
+  left: 0;
+  width: 100vw;
+  height: 25vh;
+  color: #fff;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .header .intro-txt h1 {
+  font-size: 6vmin;
+}
+
+body .header .intro-txt .action {
+  border: none;
+  min-width: 15vmin;
+  margin-top: .5rem;
+  background: #922903;
+  padding: .5rem;
+  font-size: 2vmin;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-box-shadow: 1px 1px #332d2d;
+          box-shadow: 1px 1px #332d2d;
+}
+
+body .header .intro-txt .action:hover {
+  background: #c33b09;
+  min-width: 18vmin;
+  padding: .6rem;
+  font-size: 2.5vmin;
+}
+
+body .header .contact-form {
+  position: absolute;
+  min-height: 70vh;
+  z-index: 2;
+  border-radius: 10px;
+  min-width: 50vw;
+  background: #fff;
+  top: -1480px;
+}
+
+body .header .contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50vh;
+  position: relative;
+}
+
+body .header .contact-form form h2 {
+  min-width: 70vw;
+  font-size: 4vmin;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2vmin 0;
+}
+
+body .header .contact-form form img {
+  width: 25px;
+  height: 25px;
+  padding: 7px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+body .header .contact-form form .input-field {
+  width: 30vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body .header .contact-form form button {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+  width: 10vmin;
+  height: 4vmin;
+  background: #922903;
+  color: #fff;
+  border-radius: 5px;
+}
+
+body .events {
+  width: 100vw;
+  min-height: 92vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .events .events-list {
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .events .events-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100vw;
+  min-height: 50vh;
+}
+
+body .events .events-list ul li {
+  min-width: 30vw;
+  min-height: 50vh;
+  background: #413f3f;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  margin: 1rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+body .events .events-list ul li p {
+  position: absolute;
+  min-width: 30vw;
+  min-height: 10vh;
+  top: 25vh;
+  font-size: 2.5vmin;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 1;
+}
+
+body .events .events-list ul li .filter {
+  position: absolute;
+  min-width: 30vw;
+  min-height: 50vh;
+  background: #000;
+  opacity: .5;
+  z-index: 0;
+}
+
+body .events .events-list ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 2;
+}
+
+body .events .events-list ul li:nth-child(1) {
+  background: url(./assets/woman-smiling-shaking-hands-3184286.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body .events .events-list ul li:nth-child(2) {
+  background: url(./assets/women-taking-selfies-3611313.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body .events .events-list ul li:nth-child(3) {
+  background: url(./assets/photo-of-baby-girl-in-tutu-dress-standing-beside-large-gold-2261282.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body .events .events-list ul li:nth-child(4) {
+  background: url(./assets/wedding-preparation-313707.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body .events .events-list ul li:nth-child(5) {
+  background: url(./assets/green-and-white-volkswagen-combi-594384.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body .events .events-list ul li:nth-child(6) {
+  background: url(./assets/people-at-concert-1105666.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body .events .events-list ul li:nth-child(7) {
+  background: url(./assets/smiling-man-standing-and-dancing-near-smiling-woman-2240771.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body .events .events-list ul li:nth-child(8) {
+  background: url(./assets/man-wearing-black-crew-neck-shirt-playing-dj-turntable-2123606.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body .events .events-list ul::-webkit-scrollbar {
+  display: none;
+}
+
+body .services {
+  min-height: 90vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .services .services-list {
+  width: 100vw;
+  height: 70vh;
+}
+
+body .services .services-list ul {
+  width: 90vw;
+  height: 70vh;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+}
+
+body .services .services-list ul .card {
+  width: 15rem;
+  height: 40vh;
+  background: #413f3f;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+body .services .services-list ul .card .activator {
+  width: 16rem;
+  min-height: 8vh;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  color: black;
+}
+
+body .services .services-list ul .card .activator h1 {
+  font-size: 2vmin;
+  padding: 0 1vmin;
+  margin: 0;
+  pointer-events: none;
+}
+
+body .services .services-list ul .card .activator img {
+  width: 2vmin;
+  height: 2vmin;
+  pointer-events: none;
+}
+
+body .services .services-list ul .card .card-reveal {
+  position: relative;
+  height: 40vh;
+  width: 15rem;
+  padding: 2vmin 2vmin;
+  overflow-x: hidden;
+}
+
+body .services .services-list ul .card .card-reveal .card-title {
+  position: absolute;
+  width: 16rem;
+  min-height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+}
+
+body .services .services-list ul .card .card-reveal .card-title p {
+  pointer-events: none;
+  font-size: 2vmin;
+  width: 16rem;
+  text-transform: uppercase;
+  color: #000;
+}
+
+body .services .services-list ul .card .card-reveal .card-title img {
+  height: 2vmin;
+  width: 2vmin;
+  pointer-events: none;
+}
+
+body .services .services-list ul .card .card-reveal .description {
+  color: #000;
+  z-index: 1;
+  margin-top: 8vh;
+}
+
+body .services .services-list ul .card .card-reveal::-webkit-scrollbar {
+  display: none;
+}
+
+body .services .services-list ul .card .filter {
+  position: absolute;
+  width: 15rem;
+  height: 70vh;
+  background: #000;
+  opacity: .5;
+  top: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+body .services .services-list ul li:nth-child(1) {
+  background: url(./assets/man-wearing-black-crew-neck-shirt-playing-dj-turntable-2123606.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body .services .services-list ul li:nth-child(2) {
+  background: url(./assets/iphone-travel-euro-ticket-69866.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body .services .services-list ul li:nth-child(3) {
+  background: url(./assets/accommodation-apartment-bed-bedding-279805.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body .services .services-list ul li:nth-child(4) {
+  background: url(./assets/action-asphalt-auto-automobile-1210622.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body .services .services-list ul li:nth-child(5) {
+  background: url(./assets/white-tent-3059408.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body .services .services-list ul li:nth-child(6) {
+  background: url(./assets/close-up-photo-of-assorted-color-of-push-pins-on-map-1078850.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body .services .services-list ul li:nth-child(7) {
+  background: url(./assets/macro-shot-audio-equalizer-744318.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body .services .services-list ul li:nth-child(8) {
+  background: url(./assets/unknown-person-playing-guitar-2510428.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+body .sponsors {
+  margin-top: 20vmin;
+  width: 100vw;
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .sponsors h1 {
+  margin: 15vmin auto;
+}
+
+body .sponsors img {
+  width: 40vmin;
+}
+
+body .footer {
+  min-height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 760px) {
+  body {
+    width: 100vw;
+    min-height: 100vh;
+  }
+  body .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    z-index: 3;
+    position: fixed;
+  }
+  body .nav .spacer {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  body .nav .humburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 25px;
+    height: 20px;
+    padding: 0 5vmin;
+  }
+  body .nav .humburger .line1 {
+    height: 2px;
+    width: 20px;
+    background: #fff;
+  }
+  body .nav .humburger .line2 {
+    height: 2px;
+    width: 20px;
+    background: #fff;
+  }
+  body .nav .humburger .line3 {
+    height: 2px;
+    width: 20px;
+    background: #fff;
+  }
+  body .nav .close {
+    display: none;
+    min-width: 30px;
+  }
+  body .nav .close svg {
+    width: 30px;
+    padding: 0 2vmin;
+  }
+  body .nav .navigation {
+    display: none;
+  }
+  body .drop-down {
+    display: block;
+    top: -100vh;
+    position: fixed;
+    min-height: 95vh;
+    min-width: 100vw;
+    background: #fff;
+    z-index: 2;
+  }
+  body .drop-down .drop-nav {
+    min-height: 85vh;
+    min-width: 100vw;
+  }
+  body .drop-down .drop-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    min-width: 100vw;
+    min-height: 80vh;
+  }
+  body .drop-down .drop-nav ul li {
+    list-style: none;
+  }
+  body .drop-down .drop-nav ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  body .header .contact-form {
+    position: absolute;
+    min-height: 70vh;
+    z-index: 2;
+    border-radius: 10px;
+    min-width: 90vw;
+    background: #fff;
+    top: -1480px;
+  }
+  body .header .contact-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 50vh;
+    position: relative;
+  }
+  body .header .contact-form form img {
+    width: 25px;
+    height: 25px;
+    padding: 7px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  body .header .contact-form form .input-field {
+    width: 70vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  body .header .contact-form form button {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row-align: center;
+        align-self: center;
+    width: 15vmin;
+    height: 10vmin;
+    background: #922903;
+    color: #fff;
+    border-radius: 5px;
+  }
+  body .events {
+    min-height: 100vh;
+  }
+  body .events .events-list {
+    min-height: 100vh;
+  }
+  body .events .events-list ul li {
+    min-width: 80vw;
+  }
+  body .events .events-list ul li p {
+    min-width: 80vw;
+  }
+  body .events .events-list ul li .filter {
+    min-width: 90vw;
+  }
+  body .services {
+    min-height: 300vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body .services h1 {
+    min-height: 8vh;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+  }
+  body .services .services-list {
+    min-height: 300vh;
+  }
+  body .services .services-list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 290vh;
+  }
+  body .services .services-list ul .card {
+    min-height: 40vh;
+    width: 80vw;
+  }
+  body .services .services-list ul .card .activator {
+    width: 80vw;
+    min-height: 8vh;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #fff;
+    color: black;
+  }
+  body .services .services-list ul .card .activator h1 {
+    font-size: 2vmin;
+    padding: 0 1vmin;
+    margin: 0;
+    padding-top: 6vmin;
+    pointer-events: none;
+  }
+  body .services .services-list ul .card .activator img {
+    width: 2vmin;
+    height: 2vmin;
+    pointer-events: none;
+  }
+  body .services .services-list ul .card .filter {
+    position: absolute;
+    width: 80vw;
+    height: 70vh;
+    background: #000;
+    opacity: .5;
+    top: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+  body .services .services-list ul .card .card-reveal {
+    min-width: 80vw;
+  }
+  body .services .services-list ul .card .card-reveal .card-title {
+    min-width: 80vw;
+  }
+  body .sponsors {
+    margin-top: 30vmin;
+    min-height: 40vh;
+  }
+  body .footer {
+    min-height: 100vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .footer .contact {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  body .footer .contact ul {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  body .footer .site-map {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+}
+
+@-webkit-keyframes hero {
+  0% {
+    background: url(./assets/vehicle-on-road-near-mountain-1842439.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  25% {
+    background: url(./assets/group-of-person-watching-concert-outdoors-1540343.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  50% {
+    background: url(./assets/people-sitting-on-gang-chairs-2774556.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  75% {
+    background: url(./assets/wedding-preparation-313707.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  100% {
+    background: url(./assets/vehicle-on-road-near-mountain-1842439.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@keyframes hero {
+  0% {
+    background: url(./assets/vehicle-on-road-near-mountain-1842439.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  25% {
+    background: url(./assets/group-of-person-watching-concert-outdoors-1540343.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  50% {
+    background: url(./assets/people-sitting-on-gang-chairs-2774556.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  75% {
+    background: url(./assets/wedding-preparation-313707.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  100% {
+    background: url(./assets/vehicle-on-road-near-mountain-1842439.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none !important;
+}
+/*# sourceMappingURL=main.css.map */
